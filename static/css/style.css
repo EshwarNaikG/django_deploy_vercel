@@ -1,0 +1,66 @@
+/* body{
+    background-color: blanchedalmond;
+} */
+
+.navbar-brand:hover{
+    color: yellow !important;
+}
+
+.navbar-brand{
+    font-weight: bold;
+     font-size: 30px;
+}
+
+.nav-link:hover{
+    color: yellow !important; ;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link{
+      font-size: 20px;
+    font-weight: bold;
+}
+
+img.cart{
+    width: 30px;
+    height: 30px;
+}
+
+.ecomlogo{
+    width: 10%;
+    height: 1%;
+    border-radius: 20%;
+    margin-right: 1%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Ecommerce Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"  type="text/css"  href="{% static 'css/style.css' %}">
+</head>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container">
+        {% comment %} <img  class=" ecomlogo text-white" src="{% static 'images/ecomlogo.png'%}"> {% endcomment %}
+        <a class="navbar-brand" href="{% url 'home' %}">eCommerce Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+            <ul class="navbar-nav text-center  ml-auto">
+
+                 <li class="nav-item">
+                    <a class="nav-link text-white " href="{% url 'home' %}">Home</a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link text-white " href="{% url 'about' %}">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="{% url 'store' %}">Store</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'cart' %}">Cart  <img  class=" cart text-white" src="{% static 'images/cart.png'%}"></a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'checkout' %}">Checkout</a>
+                </li> 
+
+                 <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'login' %}" >Login</a>
+                </li>
+
+            </ul>
+        </div>  
+    </div>
+</nav>
+
+<body>
+
+     {% block body %}
+       
+    {% endblock  %}
+           
+</body>
+</html>
+
